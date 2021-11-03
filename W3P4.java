@@ -44,7 +44,8 @@ public class W3P4 {
   // is there a loop inside a list?
   public static boolean containsLoop(Node head) {
     Node fast, slow;
-    fast = slow = head;
+    slow = head;
+    fast = slow.next;
     while (slow != null) {
       if (fast == slow) {
         return true;
