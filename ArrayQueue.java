@@ -9,6 +9,10 @@ public class ArrayQueue<T> {
     items = (T[])new Object[MAX_SIZE];
   }
 
+  public int size() {
+    return size;
+  }
+
   public boolean isEmpty() {
     return size == 0;
   }
@@ -58,5 +62,44 @@ public class ArrayQueue<T> {
     queue.deQueue();
     System.out.println(queue.peekFront());
     queue.deQueue();
+  }
+}
+
+class QueueApplication {
+  static class Event {
+    int arrival;
+    int duration;
+
+    public Event(int a, int d) {
+      arrival = a;
+      duration = d;
+    }
+  }
+
+  static void eventSimulation() {
+    ArrayQueue<Event> events = new ArrayQueue<Event>();
+    events.enQueue(new Event(0, 5));
+    events.enQueue(new Event(3, 3));
+    events.enQueue(new Event(4, 4));
+    events.enQueue(new Event(100, 4));
+
+    int n = events.size();
+
+    int nextAvailableTime = 0;
+    int total = 0;
+
+    while (!events.isEmpty()) {
+      Event evt = events.peekFront();
+      events.deQueue();
+      nextAvailableTime = Math.max(nextAvailableTime, evt.arrival);
+      total += (nextAvailableTime - evt.arrival);
+      nextAvailableTime = nextAvailableTime + evt.duration;
+    }
+
+    System.out.printf("Total waiting time %d and average waiting time %.2f\n", total, 1.0 * total / n);
+  }
+
+  public static void main(String[] args) {
+    eventSimulation();
   }
 }

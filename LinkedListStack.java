@@ -19,6 +19,10 @@ public class LinkedListStack<T> {
     head = null;
   }
 
+  public int size() {
+    return size;
+  }
+
   public boolean isEmpty() {
     return size == 0;
   }
@@ -65,5 +69,76 @@ public class LinkedListStack<T> {
     list.pop();
     System.out.println(list.peek());
     list.pop();
+  }
+}
+
+class StackApplication {
+  static String infix2Postfix(String expr) {
+    StringBuilder sb = new StringBuilder();
+    LinkedListStack<Character> operatorStack = new LinkedListStack<Character>();
+    for (int i = 0; i < expr.length(); i++) {
+      char c = expr.charAt(i);
+      if (c == '(') {
+        operatorStack.push(c);
+        continue;
+      }
+      if (c == ')') {
+        char op;
+        op = operatorStack.peek();
+        while (op != '(') {
+          sb.append(op);
+          operatorStack.pop();
+          op = operatorStack.peek();
+        }
+        operatorStack.pop();
+        continue;
+      }
+      if (c == '*' || c == '/') {
+        char op;
+        if (!operatorStack.isEmpty()) {
+          op = operatorStack.peek();
+          while (op == '*' || op == '/') {
+            sb.append(op);
+            operatorStack.pop();
+            if (operatorStack.isEmpty()) {
+              break;
+            }
+            op = operatorStack.peek();
+          }
+        }
+        operatorStack.push(c);
+        continue;
+      }
+      if (c == '+' || c == '-') {
+        char op;
+        if (!operatorStack.isEmpty()) {
+          op = operatorStack.peek();
+          while (op != '(') {
+            sb.append(op);
+            operatorStack.pop();
+            if (operatorStack.isEmpty()) {
+              break;
+            }
+            op = operatorStack.peek();
+          }
+        }
+        operatorStack.push(c);
+        continue;
+      }
+      sb.append(c);
+    }
+    while (!operatorStack.isEmpty()) {
+      char op = operatorStack.peek();
+      sb.append(op);
+      operatorStack.pop();
+    }
+    return sb.toString();
+  }
+
+  public static void main(String[] args) {
+    System.out.println("a+b: " + infix2Postfix("a+b"));
+    System.out.println("a+b*c: " + infix2Postfix("a+b*c"));
+    System.out.println("a/b+c*d: " + infix2Postfix("a/b+c*d"));
+    System.out.println("a*(b+c-(d+e)/f)*g: " + infix2Postfix("a*(b+c-(d+e)/f)*g"));
   }
 }
