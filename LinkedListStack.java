@@ -133,7 +133,7 @@ class StackApplication {
       operatorStack.pop();
     }
     return sb.toString();
-  }
+  }  
 
   public static void main(String[] args) {
     System.out.println("a+b: " + infix2Postfix("a+b"));
