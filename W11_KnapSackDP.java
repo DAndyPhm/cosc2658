@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class W11Example {
+public class W11_KnapSackDP {
   static int[][] globalV = null;  // for the recursive (top-down) version
 
   public static void main(String[] args) {
