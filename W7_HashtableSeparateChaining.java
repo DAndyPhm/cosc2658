@@ -1,4 +1,4 @@
-public class W7HashtableSeparateChaining {
+public class W7_HashtableSeparateChaining {
   public static void main(String[] args) {
     W7Hashtable table = new W7Hashtable();
     System.out.println("Adding to the Hashtable - Separate chaining");

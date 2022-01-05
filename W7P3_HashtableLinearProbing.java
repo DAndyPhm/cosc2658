@@ -1,4 +1,4 @@
-public class W7P3 {
+public class W7P3_HashtableLinearProbing {
   public static void main(String[] args) {
     W7Hashtable2 table = new W7Hashtable2();
     System.out.println("Adding to the Hashtable - Linear probing");

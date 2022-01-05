@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class W7P1 {
+public class W7P1_CountingSort {
   static final int SIZE = 1000000;  // array size
   static final int RANGE = 1000000;  // value range - from zero
 
