@@ -48,7 +48,7 @@ public class W7P1_CountingSort {
   }
 
   public static void main(String[] args) {
-    W7P1 problem1 = new W7P1();
+    W7P1_CountingSort problem1 = new W7P1_CountingSort();
     int[] test1 = problem1.generate();
     // create an exact copy of test1 array to make the comparison fair
     int[] test2 = Arrays.copyOf(test1, test1.length);
