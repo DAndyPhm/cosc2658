@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class W8P4 {
+public class W8P4_AllPermutation {
   static String[] elements;
   static int n;  // n is the size of the elements array
 

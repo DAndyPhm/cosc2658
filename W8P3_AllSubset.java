@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class W8P3 {
+public class W8P3_AllSubset {
   static String[] elements;
   static int n;  // n is the size of the elements array
 

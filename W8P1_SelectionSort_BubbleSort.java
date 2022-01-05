@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class W8P1 {
+public class W8P1_SelectionSort_BubbleSort {
   static final int SIZE = 10;
   static final int RANGE = 100;
 

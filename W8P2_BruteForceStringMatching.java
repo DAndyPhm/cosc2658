@@ -1,4 +1,4 @@
-public class W8P2 {
+public class W8P2_BruteForceStringMatching {
   public static void main(String[] args) {
     System.out.println(bruceforceStringMatching("ABC", "B"));  // 1
     System.out.println(bruceforceStringMatching("ABC", "D"));  // -1

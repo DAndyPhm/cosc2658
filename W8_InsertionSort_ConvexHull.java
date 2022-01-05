@@ -1,7 +1,7 @@
 import java.awt.geom.*;
 import java.util.*;
 
-public class W8Example {
+public class W8_InsertionSort_ConvexHull {
   public static void main(String[] args) {
     // insertionSort();
     convexHull();
