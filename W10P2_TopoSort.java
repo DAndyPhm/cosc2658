@@ -1,4 +1,4 @@
-public class W10P2 {
+public class W10P2_TopoSort {
   public static void main(String[] args) {
     int[] res = topoSort(new int[][]{
       {0, 0, 0, 0},

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class W10Example {
+public class W10_TopoSort {
   public static void main(String[] args) {
     // Some courses
     Course c1 = new Course("Intro to Programming");

@@ -1,7 +1,6 @@
 // Insertion sort
 
-
-public class W10P1 {
+public class W10P1_BinarySearchInsertionSort {
   public static void main(String[] args) {
     int[] test = {5, 4, 3, 2, 1};
     print(test);

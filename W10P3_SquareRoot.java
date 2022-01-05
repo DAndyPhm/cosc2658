@@ -1,4 +1,4 @@
-public class W10P3 {
+public class W10P3_SquareRoot {
   public static void main(String[] args) {
     squareroot(2);
   }
