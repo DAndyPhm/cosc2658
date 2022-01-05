@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.ArrayList;
 
-public class W4P4 {
+public class W4P4_BFS {
   public static void main(String[] args) {
     bfs(19);
   }

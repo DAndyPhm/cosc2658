@@ -1,4 +1,4 @@
-public class W4P3 {
+public class W4P3_BalancedSymbol {
   static boolean isBalanced(String s) {
     LinkedListStack<Character> st = new LinkedListStack<Character>();
     for (int i = 0; i < s.length(); i++) {
