@@ -1,7 +1,7 @@
 import java.awt.geom.*;
 import java.util.*;
 
-public class W9Example {
+public class W9_QuickConvexHull {
   public static void main(String[] args) {
     ArrayList<Point2D> hull = quickConvexHull();
     for (Point2D p : hull) {

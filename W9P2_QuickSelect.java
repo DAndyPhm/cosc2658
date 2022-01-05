@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class W9P2 {
+public class W9P2_QuickSelect {
   static final int SIZE = (int)1e6;
   static final int RANGE = (int)1e9;
 

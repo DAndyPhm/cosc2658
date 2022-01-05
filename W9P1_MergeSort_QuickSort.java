@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class W9P1 {
+public class W9P1_MergeSort_QuickSort {
   static final int SIZE = (int)1e5;
   static final int RANGE = (int)1e9;
 
