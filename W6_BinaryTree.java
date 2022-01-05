@@ -5,7 +5,7 @@
  */
 
 
-public class W6Exercise {
+public class W6_BinaryTree {
   public static void main(String[] args) {
     // Problem 1
     W6Tree tree = new W6Tree();

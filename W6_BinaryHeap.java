@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class W6HeapExample {
+public class W6_BinaryHeap {
   public static void main(String[] args) {
     Heap<W6Integer> heap = new Heap<W6Integer>();
     heap.insert(new W6Integer(10));
