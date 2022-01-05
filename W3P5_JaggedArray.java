@@ -1,4 +1,4 @@
-public class W3P5 {
+public class W3P5_JaggedArray {
   public static void main(String[] args) {
     int[] test1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     createJaggedArray(test1);

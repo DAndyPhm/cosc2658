@@ -1,4 +1,4 @@
-public class W3P3 {
+public class W3P3_OldestNewest {
   public static void main(String[] args) {
     int[] test1 = {1, 2, 3, 4, 5, 6, 7};
     // oldest = 0 and newest = 6

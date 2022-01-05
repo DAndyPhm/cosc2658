@@ -1,4 +1,4 @@
-public class W3P2 {
+public class W3P2_MaxDiff {
   public static void main(String[] args) {
     int[] test1 = {1, 2, 6, 9, 10, 20};
     // lowDay = 0 and highDay = 5

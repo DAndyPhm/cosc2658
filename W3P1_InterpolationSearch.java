@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class W3P1 {
+public class W3P1_InterpolationSearch {
   public static void main(String[] args) {
     // create an array of uniformly distributed values
     int size = 1000000;

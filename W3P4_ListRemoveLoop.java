@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class W3P4 {
+public class W3P4_ListRemoveLoop {
   public static void main(String[] args) {
     Node head = new Node(1);
     Node n2 = new Node(2);
