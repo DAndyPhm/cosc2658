@@ -9,7 +9,7 @@ public class T2RMITLetterUtility {
     ArrayList<RMITLetter> res = utility.scan(l);
     System.out.println(utility.canConnect(res.get(0), res.get(1)));  // true
     System.out.println(utility.canConnect(res.get(0), res.get(2)));  // false
-    System.out.println(utility.canFindRMIT());  // true
+    System.out.println(utility.canFindRMIT());  // false
   }
 
   ArrayList<RMITLetter> ls;
@@ -32,7 +32,7 @@ public class T2RMITLetterUtility {
     if (l1.row > l2.row) return false;
     if (l1.col > l2.col) return false;
     if ((l2.row - l1.row) + (l2.col - l1.col) > 4) return false;
-    if (l1.letter != 'R' || l1.letter != 'M' || l1.letter != 'I') return false;
+    if (l1.letter != 'R' && l1.letter != 'M' && l1.letter != 'I') return false;
     if (l1.letter == 'R' && l2.letter != 'M') return false;
     if (l1.letter == 'M' && l2.letter != 'I') return false;
     if (l1.letter == 'I' && l2.letter != 'T') return false;
